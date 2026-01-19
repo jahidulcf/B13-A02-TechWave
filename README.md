@@ -20,3 +20,6 @@ Design referance: N/A
     |- README.md
 ```
 
+### Live link:
+https://jahidulcf.github.io/B13-A02-TechWave/
+
