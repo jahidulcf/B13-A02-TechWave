@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="head">
-            <p>Tech<span>Wave</span></p>
+            <p class="logo">Tech<span class="logo-span">Wave</span></p>
             <nav>
                 <ul>
                     <li><a href="#">About</a></li>
@@ -17,19 +17,19 @@
                     <li><a href="#">Host</a></li>
                 </ul>
             </nav>
-            <button>Subscribe</button>
+            <button class="primary-btn">Subscribe <i data-lucide="arrow-right"></i></button>
         </div>
         <div class="banner">
-            <div class="banner-image">
-                <img src="./assets/microphone.png" alt="microphone image">
-                <span>new</span>
+            <div class="banner-img-container">
+                <img src="./assets/microphone.png" alt="microphone">
+                <span>New</span>
             </div>
             <div class="banner-contant">
                 <h1>TechWave</h1>
                 <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
                 <div class="banner-btns">
-                    <button>Listen to spotify</button>
-                    <button>Subscribe</button>
+                    <button class="primary-btn"><img src="./assets/spotify.png" alt="spotify icon">Listen to spotify</button>
+                    <button class="secondary-btn"> <img src="./assets/message.png" alt="message icon">Subscribe</button> <!--add icon -->
                 </div>
             </div>
         </div>
@@ -49,19 +49,19 @@
             <hr>
             <div class="report-card">
                 <div class="score">
-                    <p>150K+</p>
+                    <p class="big-text">150K+</p>
                     <p>MONTHLY LISTENERS</p>
                 </div>
                 <div class="score">
-                    <p>200+</p>
+                    <p class="big-text">200+</p>
                     <p>EPISODE PUBLISHED</p>
                 </div>
                 <div class="score">
-                    <p>4.9★</p>
+                    <p class="big-text">4.9⭑</p>
                     <p>AVERAGE RATING</p>
                 </div>
                 <div class="score">
-                    <p>50+</p>
+                    <p class="big-text">50+</p>
                     <p>INDUSTRY EXPERTS</p>
                 </div>
             </div>
@@ -69,90 +69,102 @@
         
         <section class="features-explain">
             <h3>Why choose TechWave</h3>
-            <div class="feature-card">
-                <img src="./assets/headphone.png" alt="gradient headphone icon">
-                <h4>Premium audio quality</h4>
-                <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-            </div>
-            <div class="feature-card">
-                <img src="./assets/device.png" alt="gradient headphone icon">
-                <h4>Mobile friendly</h4>
-                <p>Listen on the go with seamless mobile experience and offline downloads.</p>
-            </div>
-            <div class="feature-card">
-                <img src="./assets/location.png" alt="gradient headphone icon">
-                <h4>Global Community</h4>
-                <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
-            </div>
-            <div class="feature-card">
-                <img src="./assets/zap-fast.png" alt="gradient headphone icon">
-                <h4>Exclusive Interviews</h4>
-                <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
-            </div>
-            <div class="feature-card">
-                <img src="./assets/resource.png" alt="gradient headphone icon">
-                <h4>Rich Resources</h4>
-                <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
+            <div class="feature-cards">
+                <div class="feature-card card-1">
+                    <img src="./assets/headphone.png" alt="gradient headphone icon">
+                    <h4>Premium audio quality</h4>
+                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                </div>
+                <div class="feature-card card-2">
+                    <img src="./assets/device.png" alt="gradient headphone icon">
+                    <h4>Mobile friendly</h4>
+                    <p>Listen on the go with seamless mobile experience and offline downloads.</p>
+                </div>
+                <div class="feature-card card-3">
+                    <img src="./assets/location.png" alt="gradient headphone icon">
+                    <h4>Global Community</h4>
+                    <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                </div>
+                <div class="feature-card card-4">
+                    <img src="./assets/zap-fast.png" alt="gradient headphone icon">
+                    <h4>Exclusive Interviews</h4>
+                    <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                </div>
+                <div class="feature-card card-5">
+                    <img src="./assets/resource.png" alt="gradient headphone icon">
+                    <h4>Rich Resources</h4>
+                    <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
+                </div>
             </div>
         </section>
 
         <section class="featured-episodes">
             <h3>Featured Episodes</h3>
 
-            <div class="featured-episode">
-                <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
-                <h4>The Future of AI in Everyday Life</h4>
-                <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                <div class="duration">
-                    <img src="./assets/clock.png" alt="Clock icon">
-                    <p>42 min</p>
+            <div class="episode-container">
+                <div class="featured-episode">
+                    <iframe width="100%" height="auto"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                    <h4>The Future of AI in Everyday Life</h4>
+                    <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                    <div class="duration">
+                        <img src="./assets/clock.png" alt="Clock icon">
+                        <p>42 min</p>
+                    </div>
                 </div>
-            </div>
-            <div class="featured-episode">
-                <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
-                <h4>Building Better Habits for Remote Work</h4>
-                <p>Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
-                <div class="duration">
-                    <img src="./assets/clock.png" alt="Clock icon">
-                    <p>35 min</p>
+                <div class="featured-episode">
+                    <iframe width="100%" height="auto"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                    <h4>Building Better Habits for Remote Work</h4>
+                    <p>Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+                    <div class="duration">
+                        <img src="./assets/clock.png" alt="Clock icon">
+                        <p>35 min</p>
+                    </div>
                 </div>
-            </div>
-            <div class="featured-episode">
-                <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
-                <h4>Career Growth in Tech: A Roadmap</h4>
-                <p>Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
-                <div class="duration">
-                    <img src="./assets/clock.png" alt="Clock icon">
-                    <p>51 min</p>
+                <div class="featured-episode">
+                    <iframe width="100%" height="auto"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                    <h4>Career Growth in Tech: A Roadmap</h4>
+                    <p>Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+                    <div class="duration">
+                        <img src="./assets/clock.png" alt="Clock icon">
+                        <p>51 min</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="host-section">
             <h3>Meet the Host</h3>
-            <div>
+            <div class="host-card">
                 <img src="./assets/host.png" alt="podcast host image">
                 <div class="host-bio">
                     <h4>Alex Kumar</h4>
                     <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
                     <div class="social-links">
-                        <img src="./assets/linkedin.png" alt="linkedin gradient icon">
-                        <img src="./assets/x.png" alt="twitter gradient icon">
-                        <img src="./assets/instagram.png" alt="instagram gradient icon">
-                        <img src="./assets/youtube.png" alt="youtube gradient icon">
+                        <span>
+                            <img src="./assets/linkedin.png" alt="linkedin gradient icon">
+                        </span>
+                        <span>
+                            <img src="./assets/x.png" alt="twitter gradient icon">
+                        </span>
+                        <span>
+                            <img src="./assets/instagram.png" alt="instagram gradient icon">
+                        </span>
+                        <span>
+                            <img src="./assets/youtube.png" alt="youtube gradient icon">
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>Tech<span>Wave</span></p>
+        <p class="logo">Tech<span class="logo-span">Wave</span></p>
         <div class="channels">
             <div class="channel">
                 <img src="./assets/spotify.png" alt="spotify logo">
@@ -173,5 +185,10 @@
         </div>
         <p>© 2026 TechWave Poadcast. All right reserved.</p>
     </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
