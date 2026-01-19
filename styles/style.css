@@ -102,7 +102,7 @@ nav ul li:hover {
 }
 
 .banner {
-    background-image: url("/assets/hero-bg.png");
+    background-image: url("../assets/hero-bg.png");
     padding: 100px 10%;
     text-align: center;
     background-size: cover;
@@ -112,7 +112,7 @@ nav ul li:hover {
 
 .banner-img-container {
     position: relative;
-    background-image: url("/assets/hero-circle.png");
+    background-image: url("../assets/hero-circle.png");
     background-size: cover;
     background-position: center;
     width: 350px;
@@ -367,7 +367,7 @@ footer {
     padding:120px 10% 120px;
     text-align: center;
     color: white;
-    background-image: url("/assets/footer-bg.png");
+    background-image: url("../assets/footer-bg.png");
     background-position: center;
     background-size: cover;
 }
