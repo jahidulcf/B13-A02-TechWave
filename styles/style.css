@@ -37,6 +37,7 @@ body {
     border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .secondary-btn {
@@ -50,6 +51,7 @@ body {
     border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .primary-btn:hover,
