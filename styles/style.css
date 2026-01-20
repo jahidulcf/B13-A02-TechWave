@@ -130,6 +130,11 @@ nav ul li:hover {
     transform: translate(-50%, -50%);
 }
 
+.banner-img-container img:hover {
+    cursor: pointer;
+    animation: vibrate 0.5s linear infinite;
+}
+
 .banner-img-container span {
     position: absolute;
     top: 12px;
@@ -490,5 +495,28 @@ footer .channels {
 
     footer {
         padding: 40px 5%;
+    }
+}
+
+@keyframes vibrate {
+    1% {
+        transform: scale(1.1) translate(-48%, -48%);
+        transform-origin: center center;
+    }
+    25% {
+        transform: scale(1.05) translate(-50%, -50%);
+        transform-origin: center center;
+    }
+    50% {
+        transform: scale(1.1) translate(-48%, -48%);
+        transform-origin: center center;
+    }
+    75% {
+        transform: scale(1.05) translate(-50%, -50%);
+        transform-origin: center center;
+    }
+    100% {
+        transform: scale(1.1) translate(-48%, -48%);
+        transform-origin: center center;
     }
 }
