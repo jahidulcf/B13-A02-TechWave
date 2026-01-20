@@ -232,6 +232,12 @@ nav ul li:hover {
     border-radius: 40px;
 }
 
+.feature-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 16px 1px #00FF88;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
 .feature-card h4 {
     margin-bottom: 16px;
 }
@@ -358,6 +364,7 @@ nav ul li:hover {
 .host-bio > .social-links {
     display: flex;
     gap: 8px;
+    cursor: pointer;
 }
 
 .host-bio > .social-links span {
@@ -366,6 +373,9 @@ nav ul li:hover {
     width: 40px;
     height: 40px;
     border-radius: 50px;
+}
+.host-bio > .social-links span:hover {
+    border: 1px solid #00FF88;
 }
 
 /* footer section */
@@ -398,7 +408,118 @@ footer .channels {
     gap: 8px;
 }
 
+footer hr {
+    display: none;
+}
+
 @media screen and (max-width: 576px) {
+    .logo {
+        font-size: 2em;
+    }
+    .head nav {
+        display: none;
+    }
+    .head .primary-btn {
+        display: none;
+    }
+    .head .menu {
+        display: block;
+    }
+
+    .banner {
+        padding: 40px 5%;
+    }
+
+    .banner-img-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 24px;
+    }
+
+    .banner-img-container img {
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner-img-container span {
+        top: 0;
+        right: 0;
+    }
+
+    .banner-contant h1 {
+        font-size: 2em;
+    }
+
+    .about h3 {
+        font-size: 2em;
+    }
+    
+    .about hr {
+        margin: 40px 0;
+    }
+
+    .report-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .big-text {
+        font-size: 2em;
+    }
+
+    .features-explain {
+        padding: 40px 5%;
+    }
+
+    .features-explain h3 {
+        font-size: 2em;
+    }
+
+    .feature-cards {
+        display: block;
+    }
+
+    .feature-card {
+        margin-bottom: 40px;
+    }
+
+    .featured-episodes {
+        padding: 40px 5%;
+    }
+
+    .featured-episodes h3 {
+        font-size: 2em;
+    }
+
+    .episode-container {
+        flex-direction: column;
+    }
+
+    .host-section h3 {
+        font-size: 2em;
+    }
+
+    .host-card {
+        flex-direction: column;
+    }
+
+    .host-bio {
+        text-align: center;
+
+    }
+
+    .host-bio > .social-links {
+        justify-content: center;
+    }
+
+    footer {
+        padding: 40px 5%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
     .logo {
         font-size: 2em;
     }
@@ -431,6 +552,11 @@ footer .channels {
         transform: translate(-50%, -50%);
     }
 
+    .banner-img-container span {
+        top: 0;
+        right: 0;
+    }
+
     .banner-contant h1 {
         font-size: 2em;
     }
@@ -452,7 +578,7 @@ footer .channels {
     }
 
     .features-explain {
-        padding: 40px 5%;
+        padding: 40px 10%;
     }
 
     .features-explain h3 {
@@ -460,11 +586,16 @@ footer .channels {
     }
 
     .feature-cards {
-        grid-template-columns: 1fr;
+        display: block;
+    }
+
+
+    .feature-card {
+        margin-bottom: 40px;
     }
 
     .featured-episodes {
-        padding: 40px 5%;
+        padding: 40px 10%;
     }
 
     .featured-episodes h3 {
@@ -472,7 +603,7 @@ footer .channels {
     }
 
     .episode-container {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
 
@@ -486,7 +617,6 @@ footer .channels {
 
     .host-bio {
         text-align: center;
-
     }
 
     .host-bio > .social-links {
@@ -495,6 +625,12 @@ footer .channels {
 
     footer {
         padding: 40px 5%;
+    }
+
+    footer hr {
+        display: block;
+        opacity: 5%;
+        margin: 16px 0;
     }
 }
 
